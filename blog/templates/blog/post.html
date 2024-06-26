@@ -1,0 +1,12 @@
+{% extends 'farmsphere/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="jumbotorn">
+<div class="container">
+ <h3>{{post.title}}</h3> posted on <p>{{post.date}}</p>
+ {{post.body | safe}}
+ <br>
+ <br>
+</div>
+{% endblock %}
